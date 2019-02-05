@@ -1,12 +1,10 @@
 <?php
 function connect_db() {
  $servername = "localhost";
- $username = "cards";
- $password = "password";
- $dbname = "cards";
+ $username = "a1800561";
+ $password = "woBUwj33e";
+ $dbname = "a1800561";
  // Create connection
-GIT Exercises 4 (12)
-29.12.2018
  $conn = new mysqli($servername, $username, $password, $dbname);
  // Check connection
  if ($conn->connect_error) {
@@ -16,4 +14,3 @@ GIT Exercises 4 (12)
  return $conn;
 }
 ?>
-
