@@ -1,4 +1,4 @@
-<?php
+?php
 session_start();
 if($_SESSION['username'] == 'username') {
  include "connect.php";
@@ -16,12 +16,12 @@ while($row = mysqli_fetch_assoc($result)) {
  echo $row["city"] . " ";
  echo $row["state"] . " ";
  echo $row["country"] . " ";
- echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<br>");
  }
  } else {
  echo "0 results";
  }
+
  print("<br><br>");
  print("Insert new");
  print("<form action=\"save.php\" method=\"post\">");
@@ -53,3 +53,4 @@ while($row = mysqli_fetch_assoc($result)) {
  print("No access.");
 }
 ?>
+
